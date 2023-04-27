@@ -5,7 +5,7 @@ Migliora catena delle biblioteche in Italia
 
 #########################################################################################
 
-**__TRACCIA 4__**
+*TRACCIA 4*
 
 Biblioteca
 
