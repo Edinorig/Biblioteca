@@ -5,6 +5,7 @@ Ciascuna biblioteca contiene libri, enciclopedie e carte geo-politiche.
 I libri hanno un titolo, un autore, un anno di pubblicazione, un codice ISBN univoco, una casa editrice.
 Le enciclopedie hanno un titolo, uno o più autori, un anno di pubblicazione, una casa editrice, ma a differenza dei libri sono composti di più volumi: ogni volume ha lo stesso titolo dell'opera generale, ed in più viene specificato il numero del volume all'interno dell'enciclopedia.
 Ciascun volume ha un codice univoco ISBN identificativo. Va registrato anche di quanti volumi è composta ciascuna enciclopedia per evitare perdite involontarie.
+...
 Es: Enciclopedia degli animali, 12 volumi, pubblicata nel 2013
 Es: Enciclopedia degli animali VOLUME 1
 Es: Enciclopedia degli animali VOLUME 2
