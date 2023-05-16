@@ -1,0 +1,112 @@
+.visit-card-wrapper {
+    margin: 8rem 0 0 0;
+    width: 85%;
+}
+
+.map-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin: 8rem 0 8rem 0;
+}
+
+.map-card-information{
+    width: 28rem;
+    height: 18rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.visit-card {
+    width: 28rem;
+    height: 22rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.visit-card-text {
+    padding: 1.5rem 0 0 0;
+}
+
+.visit-card-button {
+    width: 100%;
+    height: 18%;
+}
+
+.visit-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.visit-card-image {
+    width: 25rem;
+}
+
+
+
+.bennefit-wrapper {
+    width: 105.9%;
+    height: 30rem;
+
+    margin: 8rem 0 0 0;
+    margin-left: -2.5rem;
+
+    background: var(--background-extend-light);
+}
+
+.benefit-logo{
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem 0 0 0;
+
+    width: 100%;
+
+    color: var(--text);
+}
+
+.benefit-cards-wrapper{
+    width: 100%;
+    height: 3rem;
+    margin: 4rem 0 0 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bennefit-card{
+    width: 15%;
+    height: 20rem;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bennefit-card-img{
+    width: 11rem;
+}
+
+.bennefit-card-link{
+    margin: 1rem 0 0 0;
+}
+
+.bennefit-card-text,
+a.bennefit-card-link{
+    color: var(--text);
+}
+
+.underscored-text{
+    margin: 0.4rem 0 0 0;
+    width: 100%; 
+    height: 2px; 
+    background: var(--text);
+}

@@ -1,0 +1,15 @@
+:root{
+    --text: #F1E9DB;
+    --text-logo: #00b2ff;
+    --text-accent: #716A5C;
+    --text-accen-lighter: rgba(113, 106, 92, 0.5);
+    --text-extend: rgba(0, 0, 0, 0);
+    --text-extend-focused: rgba(0, 0, 0, 0.7);
+    --text-extend-notFocused: rgba(0, 0, 0, 0.5);
+
+    --background: #F1E9DB;
+    --background-extend: #716A5C;
+    --background-extend-light: #A39B8B;
+    --background-accent: #1E1E1E;
+    --background-accent-light: #D6D6D6;
+}

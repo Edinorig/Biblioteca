@@ -1,0 +1,38 @@
+@import url("./font.css");
+@import url("./colors.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background);
+
+    margin: 0 2.5rem 0 2.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-color-accent {
+    color: var(--text-logo);
+}
+
+button {
+    border: none;
+}
+
+button.confirm-button {
+    background: var(--background-accent);
+    color: var(--text);
+    border-radius: 5px;
+}
+
+button.confirm-button:hover{
+    background: var(--background);
+    color: var(--text-extend-focused);
+    border: 3px solid var(--text-extend-focused);
+}
