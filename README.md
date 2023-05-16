@@ -1,6 +1,5 @@
 # Biblioteca
-<<<<<<< HEAD
-=======
+
 Migliora catena delle biblioteche in Italia
 
 
@@ -10,7 +9,7 @@ Migliora catena delle biblioteche in Italia
 *TRACCIA 4*
 
 ## **_Biblioteca_ **
->>>>>>> 23be68c (Create page main(only css and html))
+
 
 Si vuole realizzare un sistema informativo per la gestione di una catena di biblioteche.
 Ciascuna biblioteca contiene libri, enciclopedie e carte geo-politiche.
