@@ -1,27 +1,39 @@
-class Header{
-    constructor(parent,props){
+import Authentication from "../acces/auth.js";
+
+class Header {
+    constructor(parent, props) {
         this.parentElement = parent;
         this.props = props;
 
         this.template;
     }
 
-    init(){
+    init() {
         this.initElements();
         this.initEventListener();
     }
 
-    initElements(){
+    initElements() {
         this.template = this.initTemplate();
 
         this.elements = {
-
+            authButton: this.template.querySelector('.button-auth'),
+            body: document.querySelector('body'),
+            loginLink: document.querySelector('.login-link'),
         }
 
         this.parentElement.appendChild(this.template);
     }
 
-    initEventListener(){
+    initEventListener() {
+        let auth ;
+        this.elements.authButton.addEventListener('click', (e => {
+            console.log(this.elements.body);
+            auth = new Authentication(this.elements.body, true, false);
+            auth.init();
+        }))
+
+
 
     }
 
@@ -35,8 +47,8 @@ class Header{
                 </div>
                 <div class="nav-links">
                     <div class="nav-link"><a href=""><h4>Prenota</h4></a></div>
-                    <div class="nav-link"><a href=""><h4>ContactUs</h4></a></div>
-                    <div class="nav-link" ><a href=""><h4>Home</h4></a></div>
+                    <div class="nav-link"><a href=""><h4>Contact Us</h4></a></div>
+                    <div class="nav-link" ><a href=""><h4>Profile</h4></a></div>
                 </div>
 
                 <div class="nav-auth">

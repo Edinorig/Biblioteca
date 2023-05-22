@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../common/css/global.css">
     <link rel="stylesheet" href="../common/lib/header/header.css">
+    <link rel="stylesheet" href="../common/lib/acces/auth.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Visit page</title>
 </head>
 
@@ -80,28 +83,41 @@
             </div>
         </div>
 
-
-        <!-- TODO  a map with alllibrary in italy -->
-        <div class="map-card-wrapper">
-            <div class="map-card">
-                <div class="map-card-information">
-                    <div class="map-card-logo">
-                        <h2>UI nostri negozzi ci sono in tutta l’Italia</h2>
-                    </div>
-                    <div class="map-card-text">
-                        <h5>La nostra vasta gamma di libri vi offre l'opportunità di scoprire nuove letture, esplorare
-                            diversi argomenti e arricchire la vostra conoscenza, il tutto con la comodità di trovarsi
-                            nelle vicinanze.
-                        </h5>
-                    </div>
-                </div>
+<!-- TODO  a map with alllibrary in italy -->
+<div class="map-card-wrapper">
+    <div class="map-card">
+        <div class="map-card-information">
+            <div class="map-card-logo">
+                <h2>UI nostri negozzi ci sono in tutta l’Italia</h2>
             </div>
-            <img class="map-card-image" src="../common/images/book-img.svg" alt="">
+            <div class="map-card-text">
+                <h5>La nostra vasta gamma di libri vi offre l'opportunità di scoprire nuove letture, esplorare
+                    diversi argomenti e arricchire la vostra conoscenza, il tutto con la comodità di trovarsi
+                    nelle vicinanze.
+                </h5>
+            </div>
         </div>
+    </div>
+    <div class="wrapper-google-map" id="map"></div>
+</div>
+</section>
 
-    </section>
+<script>
+    var map;
+    $(document).ready(function () {
+        latitudine = 45.650075;
+        longitudine = 13.767766;
+        mapOptions = {
+            center: new google.maps.LatLng(latitudine, longitudine),
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map = new google.maps.Map($("#map")[0], mapOptions);
+        marker = new google.maps.Marker({ position: new google.maps.LatLng(latitudine, longitudine), map: map });
+    });
+</script>
+<script src="./js/view-main-page.js" type="module"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0RLgPIM87iDhK6rJww_Wb6VuIMXnjS_U"></script>
 
 </body>
-<script src="./js/view-main-page.js" type="module"></script>
-
 </html>

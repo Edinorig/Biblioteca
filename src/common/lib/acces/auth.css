@@ -1,0 +1,111 @@
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--background-modal-window);
+}
+
+div.login-window {
+    width: 37rem;
+    height: 26rem;
+}
+
+div.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 5px;
+
+    background: var(--background-extend-light);
+}
+
+input.input-data {
+    background: var(--background-extend);
+    padding-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--text);
+}
+
+input.input-data::placeholder {
+    color: var(--text);
+}
+
+input.input-data-auth {
+    width: 23rem;
+    height: 3rem;
+
+    margin-bottom: 1rem;
+}
+
+form.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.auth-form-registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-content-logo {
+    margin: 2rem;
+}
+
+button.confirm-button {
+    margin-top: 2rem;
+}
+
+.confirm-auth-button {
+    height: 63px;
+    width: 100%;
+}
+
+h4.reminder-text {
+    margin-top: 1rem;
+    color: var(--text-lighter);
+}
+
+
+a.login-link,
+a.register-link {
+    color: var(--text);
+    cursor: pointer;
+}
+
+div.registration-window {
+    width: 37rem;
+    height: 45rem;
+}
+
+
+div.wrapper-registration-data {
+    display: flex;
+    flex-direction: column;
+    height: 23rem;
+    align-items: center;
+}
+
+h4.registration-add-number {
+    color: var(--text-lighter);
+    cursor: pointer;
+}
+
+div.wrapper-input-registration-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

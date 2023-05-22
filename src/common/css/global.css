@@ -23,6 +23,7 @@ a {
 
 button {
     border: none;
+    cursor: pointer;
 }
 
 button.confirm-button {
@@ -35,4 +36,14 @@ button.confirm-button:hover{
     background: var(--background);
     color: var(--text-extend-focused);
     border: 3px solid var(--text-extend-focused);
+}
+
+button.button-auth:hover{
+    background: var(--background);
+    color: var(--text-accent);
+    border: 3px solid var( --background-extend);
+}
+
+.display-none{
+    display: none !important;
 }

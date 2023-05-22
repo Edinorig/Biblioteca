@@ -23,6 +23,7 @@ h5 {
     font-size: 1.1rem;/* 18px */
 }
 
+input::placeholder,
 h1,
 h2,
 h3,
